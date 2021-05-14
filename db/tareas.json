@@ -1,0 +1,22 @@
+[
+  {
+    "titulo": "comer",
+    "estado": "terminado"
+  },
+  {
+    "titulo": "dormir",
+    "estado": "pendiente"
+  },
+  {
+    "titulo": "estudiar",
+    "estado": "en proceso"
+  },
+  {
+    "titulo": "trabajar",
+    "estado": "pendiente"
+  },
+  {
+    "titulo": "repasar",
+    "estado": "pendiente"
+  }
+]
