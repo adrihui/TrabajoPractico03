@@ -14,20 +14,18 @@ switch (accion) { // Realizo un switch para trabajar con condicionales.
         break;
     case 'filtrar' : // En caso de escribir 'filtrar' en la posicio 2 del argv de process, debe hacer lo siguiente:
         moduloTareas.leerPorEstado(process.argv[3]) // Requiero del moduloTareas el metodo leerPorEstado(), que recibe por parametro lo que se escribe en la posicion 3 del argv de process.
-        break
+        break;
     case 'borrar' : // En caso de escribir 'borrar' en la posicio 2 del argv de process, debe hacer lo siguiente:
         moduloTareas.borrarUltimo() // Requiero del moduloTareas el metodo borrarUltimo().
-        break
-    case accion: // En caso de escribir en la posicio 2 del argv de process, debe hacer lo siguiente:
-        if (accion ==='listar') { // si lo escrito es igual a 'listar' :
-            return moduloTareas.listarTarea() // Retorna del moduloTareas el metodo listarTarea().
-        }
-        if (!accion) { // si no se escribe nada :
-            return console.log ('Atención - Tienes que pasar una acción'); // Muestra por consola este mensaje.
-        }
-        console.log ('No entiendo qué quieres hacer'); // Si se escribe cualquier otra cosa, muestra por consola este mensaje.
-        break 
+        break;
+    case 'listar': // En caso de escribir 'listar' en la posicio 2 del argv de process, debe hacer lo siguiente:
+        moduloTareas.listarTarea()// Requiero del moduloTareas el metodo listarTarea().
+        break;
+    case undefined :  // En caso de no escribir nada :
+        console.log ('Atención - Tienes que pasar una acción'); // Muestra por consola este mensaje.
+        break;
     default:
+        console.log ('No entiendo qué quieres hacer'); // Si se escribe cualquier otra cosa, muestra por consola este mensaje. 
         break;
 }
  
